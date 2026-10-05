@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101413">
+  <title>The Unseen Game — A theatre of betrayal</title>
+  <meta name="description" content="The room agreed. The room was wrong. Enter a moving theatre of Celebrity Traitors: watch coalitions form, turn the character cards, and see how the game changed.">
+  <meta property="og:title" content="The Unseen Game · A theatre of betrayal">
+  <meta property="og:description" content="A mask. A hunter. A sacrifice. Six acts, six character cards, and the decisions that changed Celebrity Traitors.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="theatre.css"><link rel="stylesheet" href="cinema.css"><link rel="stylesheet" href="revelations.css">
+  <script type="module" src="src/app.js"></script>
+  <script type="module" src="src/theatre.js"></script><script type="module" src="src/cinema.js"></script><script type="module" src="src/revelations.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the game</a>
+  <header class="site-header">
+    <a class="wordmark" href="#"><span class="mark" aria-hidden="true">◉</span> THE UNSEEN GAME<span class="edition">CELEBRITY UK · SERIES 1</span></a>
+    <nav aria-label="Explore"><a href="#theatre">The theatre</a><a href="#cast-of-shadows">The cast of shadows</a><a href="#ballot-lab">Change the ending</a></nav>
+    <button class="text-button" data-open-method>Sources <span aria-hidden="true">↗</span></button>
+  </header>
+  <main id="main">
+    <section class="theatre" id="theatre" aria-labelledby="act-title" data-act="0">
+      <div class="theatre-mast"><span>THE CELEBRITY TRAITORS · UK SERIES 1</span><span>A THEATRE OF BETRAYAL</span><span>FULL SERIES SPOILERS</span></div>
+      <div class="theatre-stage">
+        <div class="act-copy"><span class="eyebrow" id="act-kicker"></span><h1 id="act-title"></h1><p id="act-line"></p><div class="act-evidence"><strong id="act-metric"></strong><span id="act-unit"></span></div><p id="act-reading"></p><div class="act-actions"><button class="primary-button" id="play-drama" aria-pressed="false">▶ Play the 30-second fall</button><button class="text-button" id="share-scene">Share this scene ↗</button></div></div>
+        <div class="network-wrap"><div class="network-heading"><span id="stage-round"></span><button class="text-button" id="drama-sound" aria-pressed="false">♪ Sound off</button></div><div id="constellation"><canvas id="network" aria-label="Animated network of actual votes. Each moving thread travels from a voter to their target."></canvas><div id="network-labels"></div><div class="network-centre" aria-hidden="true">THE<br>ROUND<br>TABLE</div></div><div class="network-footer"><span><i></i>Traitor <i></i>Faithful</span><button class="text-button" id="organise-network" aria-pressed="true">○ Arrange around the table</button></div><div class="network-lenses" role="group" aria-label="Whose votes to show"><button data-lens="all" aria-pressed="true">Every accusation</button><button data-lens="traitors" aria-pressed="false">The Traitor threads</button><button data-lens="faithful" aria-pressed="false">Only the Faithful</button></div></div>
+      </div>
+      <div class="film-track"><span id="film-progress"></span></div>
+      <div class="scene-selector" role="group" aria-label="Choose an act"><button class="scene-button" data-scene="0" aria-pressed="true"><small>I</small>The witch hunt</button><button class="scene-button" data-scene="1" aria-pressed="false"><small>II</small>The fog</button><button class="scene-button" data-scene="2" aria-pressed="false"><small>III</small>The warning</button><button class="scene-button" data-scene="3" aria-pressed="false"><small>IV</small>The sacrifice</button><button class="scene-button" data-scene="4" aria-pressed="false"><small>V</small>The clarity</button><button class="scene-button" data-scene="5" aria-pressed="false"><small>VI</small>The betrayal</button></div>
+      <div class="theatre-note"><span>Follow a thread. Watch a coalition form. Touch a name.</span><a href="#cast-of-shadows">Meet the players</a></div>
+    </section>
+
+    <section class="cast-section" id="cast-of-shadows" aria-labelledby="cast-title"><div class="section-heading"><div><span class="eyebrow">SIX PLAYERS. HOW THEIR GAMES UNFOLDED.</span><h2 id="cast-title">The cast of <em>shadows.</em></h2></div><div class="cast-invitation"><p>A mask. A hunter. A sacrifice.<br>Turn a card. Read the game differently.</p><button class="text-button" id="draw-card">✧ Deal me a card</button></div></div><div id="tarot-deck" class="tarot-deck"></div><p class="deck-caption">Choose a card to see what helped or hurt that player.</p></section>
+
+    <section class="apology-section" id="the-apology" aria-labelledby="apology-title"><div class="apology-intro"><span class="eyebrow">WHY NICK TURNED AGAINST JOE</span><h2 id="apology-title">An apology made Joe<br><em>look guilty.</em></h2><p>Joe helped banish Cat, a Traitor. Then he apologised. Nick heard him.</p></div><div class="apology-scene"><blockquote>“I’m sorry.”</blockquote><span class="eyebrow">YOU’RE NICK. WHAT DID YOU JUST HEAR?</span><div class="apology-options"><button data-apology="faithful" aria-pressed="false">A Faithful feeling guilty.</button><button data-apology="traitor" aria-pressed="false">A Traitor sacrificing an ally.</button></div><div id="apology-answer" hidden aria-live="polite"></div></div></section>
+
+    <section class="opening" id="anatomy" aria-labelledby="main-title">
+      <div class="edition-line"><span>THE CELEBRITY TRAITORS · UK · SERIES 1</span><span class="spoiler">FULL SERIES SPOILERS</span></div>
+      <div class="opening-title"><h2 id="main-title">Under<br><em>the spell.</em></h2><div class="opening-copy"><p>Alan won while<br>hardly attracting a vote.</p><p class="muted">Compare his record with the players who kept coming under suspicion.</p><a class="jump-link" href="#players">Compare the players</a></div></div>
+      <div class="instrument">
+        <div class="instrument-header"><div class="section-label"><span class="live-mark"></span> WHO CAME UNDER SUSPICION?</div><div class="segmented" role="group" aria-label="Choose a view"><button data-view="pressure" aria-pressed="true">Suspicion</button><button data-view="chaos" aria-pressed="false">Chaos</button><button data-view="fragility" aria-pressed="false">Knife edges</button><button data-view="accuracy" aria-pressed="false">Accuracy</button></div></div>
+        <div class="instrument-body"><div class="score-wrap"><div id="score" class="score" aria-label="Interactive season visualization"></div><div class="chart-key" id="chart-key"></div></div><aside class="inspector" id="inspector" aria-live="polite"></aside></div>
+        <div class="instrument-footer"><span id="chart-instruction">Select a name to follow their story.</span><button id="play-season" class="text-button">▶ Replay the season</button></div>
+      </div>
+      <div class="opening-bottom"><span>Follow the votes from the first banishment to the final four.</span><button class="text-button" data-open-method>Behind the scenes <span aria-hidden="true">↗</span></button></div>
+    </section>
+
+    <section class="revelations" aria-labelledby="revelations-title">
+      <div class="section-heading"><div><span class="eyebrow">01 / THE THINGS THE VOTES REVEAL</span><h2 id="revelations-title">Look again.</h2></div><p>A season you know.<br>A game you might have missed.</p></div>
+      <div class="revelation-grid">
+        <button class="revelation red-card" data-story="blind"><span class="card-index">THE BLIND SPOT / 01</span><strong class="big-stat">2</strong><h3>Votes against Alan.<br>In the whole series.</h3><p>Clare cast one. Joe cast the other.<br>Both were banished.</p><span class="card-action">Trace the two votes <span>↗</span></span></button>
+        <button class="revelation" data-story="wrong"><span class="card-index">THE FALSE CONSENSUS / 02</span><strong class="big-stat">5<span>in a row</span></strong><h3>The first five banishments<br>removed Faithfuls.</h3><p>The room kept finding agreement.<br>It took longer to find a Traitor.</p><span class="card-action">See the accuracy collapse <span>↗</span></span></button>
+        <button class="revelation" data-story="hunter"><span class="card-index">THE DETECTOR’S DILEMMA / 03</span><strong class="big-stat">5<span>/ 9</span></strong><h3>Joe’s votes hit Traitors.<br>His last one did too.</h3><p>The most correct ballots of any Faithful.<br>It still wasn’t enough.</p><span class="card-action">Put his last vote to the test <span>↗</span></span></button>
+      </div>
+    </section>
+
+    <section class="ballot-section" id="ballot-lab" aria-labelledby="ballot-title">
+      <div class="section-heading"><div><span class="eyebrow">02 / YOUR HAND ON THE SCALES</span><h2 id="ballot-title">Change one vote.<br><em>Change how you see it.</em></h2></div><p>Real ballots. A different choice.<br>How much of this game was locked in?</p></div>
+      <div class="lab-top"><div class="round-picker" role="group" aria-label="Choose a turning point"><button data-lab="9" aria-pressed="true">The final four</button><button data-lab="8" aria-pressed="false">Cat’s banishment</button><button data-lab="7" aria-pressed="false">Kate’s banishment</button><button data-lab="4" aria-pressed="false">The deadlock</button></div><button id="reset-lab" class="text-button">↺ Reset votes</button></div>
+      <div class="lab-grid"><div class="ballot-board"><div class="board-top"><span class="eyebrow" id="lab-round-label"></span><span class="scenario-tag" id="scenario-tag">RECORDED VOTE</span></div><div id="ballot-stage" aria-label="Editable ballot board"></div><div class="ballot-instruction"><span class="instruction-number">1</span><span>Choose a voter.</span><span class="instruction-number">2</span><span>Tap a target above.</span></div><div id="voter-buttons" class="voter-buttons" role="group" aria-label="Choose whose ballot to change"></div><div id="target-picker" class="target-picker"></div></div><aside class="lab-result" id="lab-result" aria-live="polite"></aside></div>
+      <p class="footnote">An exact change to a recorded tally. The rest of the ballots stay fixed. A different result cannot tell us how the rest of the series would have unfolded.</p>
+    </section>
+
+    <section class="ghost-section" id="ghosts" aria-labelledby="ghost-title">
+      <div class="ghost-copy"><span class="eyebrow">MURDERS · WHO LEFT BEFORE THE NEXT VOTE</span><h2 id="ghost-title">Did murder<br><em>protect Jonathan?</em></h2><p>Three murder victims last voted for Jonathan. The timing changes what that tells us.</p><p class="muted">Ruth died while he was still in the game. Lucy died just before he was banished. Celia died after he was already out.</p><ol class="murder-sequence"><li>Ruth votes Jonathan → murdered<small>Jonathan survives three more ordinary votes.</small><details><summary>Why choose Ruth?</summary><p>Jonathan worried she would keep accusing him. Cat warned that murdering her could make him look guilty.</p><a href="https://www.standard.co.uk/culture/music/jonathan-ross-clare-balding-alan-carr-bbc-one-celia-imrie-b1253383.html" target="_blank" rel="noreferrer">Reported turret discussion · PA / The Standard ↗</a></details></li><li>Lucy votes Jonathan → murdered<small>At the next vote, six players choose Jonathan.</small></li><li class="banishment">Jonathan is banished</li><li>Celia is murdered<small>Her last target, Jonathan, has already gone.</small></li></ol><button class="outline-button" id="ghost-toggle" aria-pressed="false">Hide the murdered players</button></div>
+      <div class="ghost-visual"><div class="ghost-head"><span>LAST BALLOT BEFORE MURDER</span><span>TARGET</span></div><div id="ghost-list"></div><div class="ghost-takeaway"><strong>3 of 7</strong><p>Victims last voted for Jonathan. But Celia’s murder could not have saved him: he had already been banished.</p></div></div>
+    </section>
+
+    <section class="portrait-section" id="players" aria-labelledby="portrait-title"><div class="section-heading"><div><span class="eyebrow">PLAYER COMPARISON</span><h2 id="portrait-title">Finding Traitors.<br><em>Attracting suspicion.</em></h2></div><p>Who found Traitors?<br>Who attracted the room’s votes?</p></div><div class="portrait-tools"><div class="segmented" role="group" aria-label="Player ranking"><button data-ranking="correct" aria-pressed="true">Compare both</button><button data-ranking="pressure" aria-pressed="false">Votes received</button></div><span class="muted" id="ranking-note">Faithful players · restricted revote excluded</span></div><div id="player-ranking" class="player-ranking"></div><p class="footnote">Select a player to see their votes round by round.</p></section>
+
+    <section class="instinct-section" id="instinct" aria-labelledby="instinct-title"><div class="instinct-intro"><span class="eyebrow">05 / THREE MOMENTS. ONE MINUTE.</span><h2 id="instinct-title">Put your<br><em>instincts on trial.</em></h2><p>You know who won.<br>Do you remember how the votes went?</p><div class="trial-progress" id="trial-progress" aria-label="Challenge progress"></div></div><div class="trial-card" id="trial-card" aria-live="polite"></div></section>
+
+    <section class="closing"><span class="eyebrow">THE UNSEEN GAME</span><h2>Who would you<br><em>watch differently now?</em></h2><div class="closing-actions"><button class="primary-button" id="share-season">Share the findings</button><button class="outline-button" id="download-poster">Save the season as a poster</button></div><p>Made for curious viewers. Independent of the BBC and Studio Lambert.</p></section>
+  </main>
+  <footer><a class="wordmark" href="#">◉ THE UNSEEN GAME</a><span>UK CELEBRITY SERIES 1 · 2025</span><button class="text-button" data-open-method>Sources & methodology</button></footer>
+  <dialog id="method-dialog" aria-labelledby="method-title"><div class="dialog-heading"><span class="eyebrow">SOURCES AND METHODS</span><button class="close-button" data-close-dialog aria-label="Close evidence">×</button></div><h2 id="method-title">What we know.<br>What we don’t.</h2><div id="method-content"></div></dialog>
+  <dialog id="tarot-dialog" aria-labelledby="tarot-title"><div class="dialog-heading"><span class="eyebrow">PLAYER PROFILE</span><button class="close-button" data-close-dialog aria-label="Close character card">×</button></div><div id="tarot-content"></div></dialog>
+  <dialog id="story-dialog" aria-labelledby="story-title"><div class="dialog-heading"><span class="eyebrow">A CLOSER LOOK</span><button class="close-button" data-close-dialog aria-label="Close finding">×</button></div><div id="story-content"></div></dialog>
+  <dialog id="poster-dialog" aria-labelledby="poster-title"><div class="dialog-heading"><span class="eyebrow">STORY IMAGE</span><button class="close-button" data-close-dialog aria-label="Close poster">×</button></div><h2 id="poster-title">A season worth sharing.</h2><div id="poster-content"></div></dialog>
+  <dialog id="share-dialog" aria-labelledby="share-title"><div class="dialog-heading"><span class="eyebrow">SEND THE REVELATION</span><button class="close-button" data-close-dialog aria-label="Close sharing">×</button></div><h2 id="share-title">Worth a second look.</h2><p id="share-caption"></p><label class="share-label" for="share-url">Link to this exact view</label><input id="share-url" readonly><div class="dialog-actions"><button class="primary-button" id="copy-share">Copy link</button><button class="outline-button" id="native-share">Share with an app</button></div><p class="local-share-note" id="local-share-note"></p></dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <noscript><p class="noscript">This interactive analysis needs JavaScript. The site reconstructs 103 ballots from the first UK Celebrity Traitors. Alan received two votes across the series. Sources: Wikipedia and The Traitors Wiki voting histories.</p></noscript>
+</body>
+</html>
+

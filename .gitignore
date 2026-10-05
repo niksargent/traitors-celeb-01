@@ -1,0 +1,15 @@
+dist/
+node_modules/
+artifacts/
+.env
+.env.*
+
+# Local working material
+old ideas/
+auditions/
+research/
+RESEARCH.md
+scripts/voice-audition.py
+scripts/import-browser-audio.mjs
+scripts/research-*.mjs
+scripts/build-winner-ballots.mjs

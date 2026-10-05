@@ -1,0 +1,122 @@
+{
+ "voice_id": "mfxPGiKweaQEsXJix2Ve",
+ "voice": "Zane",
+ "clips": [
+  {
+   "id": "cover-intro",
+   "text": "This is Alan Carr. Comedian. Secretly, a Traitor. The others must find him and vote him out. But look at something else. Not who suspects him. Who votes with him."
+  },
+  {
+   "id": "cover-early",
+   "text": "At first, he has a crowd. Then just one companion. Then another. The target changes. The company changes. Alan stays in company."
+  },
+  {
+   "id": "cover-late-plain",
+   "text": "Celia votes with Alan again. Then five others join him against Jonathan. Later, he votes with Kate, then Cat. At the final four, David and Nick vote with Alan to banish Joe."
+  },
+  {
+   "id": "cover-reveal-plain",
+   "text": "In all nine votes, someone else chose the same person as Alan. His voting partners kept changing. Perhaps that helped him fit in with different groups as the game went on."
+  },
+  {
+   "id": "team-intro",
+   "text": "Now meet the hidden team. Alan, the comedian. Cat Burns, the singer. Jonathan Ross, the presenter. Three Traitors. You might expect their votes to travel together."
+  },
+  {
+   "id": "team-votes",
+   "text": "Watch their targets. Sometimes two agree. Often, nobody does. Six rounds together. Not once do all three write the same name."
+  },
+  {
+   "id": "team-reveal-plain",
+   "text": "If you were looking for three people who always voted together, you would have missed these Traitors. Alan, Cat and Jonathan never all chose the same person in their six rounds together."
+  },
+  {
+   "id": "winners-intro",
+   "text": "Does company matter beyond Alan? These are the winners of three British series. Five people. Fifty-five ordinary votes. Each light is one of those votes."
+  },
+  {
+   "id": "winners-reveal",
+   "text": "Now remove every vote that had company. Only three remain. Fifty-two times, a winner shared their target with somebody else."
+  },
+  {
+   "id": "winners-outro-plain",
+   "text": "These five winners almost always voted for someone who had other votes against them. When you watch the next series, look for players whose suspicions are shared, and players who cannot get anyone to agree."
+  },
+  {
+   "id": "fracture-agree",
+   "text": "Joe, David and Nick all vote for Cat. Three Faithfuls agree on the same person. They are right. Cat is banished, and reveals that she is a Traitor."
+  },
+  {
+   "id": "fracture-apology",
+   "text": "Then Joe apologises to Cat. Nick later says this made him think Joe was a fellow Traitor. An apology helped turn Nick against the man who had just voted with him."
+  },
+  {
+   "id": "fracture-switch",
+   "text": "At the next vote, Nick and David choose Joe. Watch them move to Alan’s side. Alan also votes for Joe. Joe is now on his own."
+  },
+  {
+   "id": "fracture-out",
+   "text": "Joe votes for Alan. He is right. But three votes remove Joe from the game. The two Faithfuls who helped catch Cat have now helped Alan survive."
+  },
+  {
+   "id": "murder-ruth",
+   "text": "Ruth votes for Jonathan. She is right. In the Traitors’ discussion, Jonathan worries that she will keep accusing him. He wants her removed."
+  },
+  {
+   "id": "murder-ruth-out",
+   "text": "Ruth is murdered. Jonathan stays in the game. He survives three more ordinary votes. But other players still suspect him."
+  },
+  {
+   "id": "murder-lucy",
+   "text": "Now Joe and Lucy both vote for Jonathan. They have the right person, but only two votes. Four votes remove Stephen instead."
+  },
+  {
+   "id": "murder-lucy-out",
+   "text": "Then Lucy is murdered. One of the players who voted for Jonathan is gone. Joe is still there."
+  },
+  {
+   "id": "murder-jonathan-out",
+   "text": "At the next vote, five others join Joe. Six votes remove Jonathan. Lucy has gone, but the suspicion has spread. Removing one accuser did not stop the others."
+  },
+  {
+   "id": "season-first-five",
+   "text": "Start with the banishments. Niko. Tameka. Clare. Mark. Stephen. Five players leave, and every one is Faithful. All three Traitors are still in the game."
+  },
+  {
+   "id": "season-jonathan-kate",
+   "text": "Then they catch Jonathan. For the first time, a Traitor leaves. But the next banishment removes Kate, who is Faithful. Two Traitors are still there."
+  },
+  {
+   "id": "season-finale",
+   "text": "In the finale, they catch Cat. Only Alan remains. Then they vote out Joe, who is Faithful. They have caught two Traitors, but the last one wins."
+  },
+  {
+   "id": "fracture-opening",
+   "text": "Joe has found the last Traitor. It is Alan. But Nick and David vote with Alan to remove Joe. Go back one vote. What changed?"
+  },
+  {
+   "id": "network-split-start",
+   "text": "Joe and David vote for Kate. Nick votes for Cat. Watch what happens when all three choose the same person."
+  },
+  {
+   "id": "fracture-agree-v4",
+   "text": "Joe, David and Nick all vote for Cat. Three Faithful players choose the same person. They are right. Cat is banished. Alan is now the only Traitor left."
+  },
+  {
+   "id": "network-accusers-end",
+   "text": "Ruth and Lucy are gone. Jonathan is banished anyway. Removing those players did not stop the votes against him. Watch who else takes up the accusation."
+  },
+  {
+   "id": "pacing-niko",
+   "text": "Episode two stops before Stephen shows his vote. Niko and Kate each have three. The next episode reveals the rest. Niko finishes with ten votes, Kate with three. The pause made the outcome feel less certain than the completed count."
+  },
+  {
+   "id": "pacing-tie",
+   "text": "Episode five ends with Mark and David tied. Five votes each, even after a second vote. This time, waiting cannot reveal a deciding ballot. In episode six, a chest decides. Mark leaves."
+  },
+  {
+   "id": "pacing-murder",
+   "text": "Episode six resolves one cliffhanger, then leaves another. Lucy, Nick and Kate face a murder. The answer waits for episode seven. Lucy is gone. Nick and Kate return."
+  }
+ ]
+}
