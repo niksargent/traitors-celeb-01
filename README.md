@@ -27,7 +27,7 @@ The local site runs at http://localhost:4173/. The build writes the public site 
 
 ## Publish
 
-GitHub Pages deploys through `.github/workflows/pages.yml`. Run **Publish GitHub Pages** from the repository's Actions tab to publish an update. The workflow runs tests before deployment.
+GitHub Pages deploys through `.github/workflows/pages.yml` after a push to `main`. You can also run **Publish GitHub Pages** from the repository's Actions tab. The workflow runs tests before deployment.
 
 Asset paths are relative, so the site works within the repository's Pages subpath. Local conversations, auditions and research notes are excluded from this repository.
 

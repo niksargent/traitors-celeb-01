@@ -3,6 +3,7 @@ node_modules/
 artifacts/
 .env
 .env.*
+trailer/
 
 # Local working material
 old ideas/
@@ -13,3 +14,16 @@ scripts/voice-audition.py
 scripts/import-browser-audio.mjs
 scripts/research-*.mjs
 scripts/build-winner-ballots.mjs
+
+# Trailer rendering intermediates
+trailer/stills/
+trailer/preview/
+trailer/picture.mp4
+trailer/score-and-voice.wav
+trailer/audio-review.mp3
+trailer/*-check.jpg
+trailer/contact.png
+trailer/mobile-contact.png
+trailer/storyboard.jpg
+trailer/tarot-preview.png
+trailer/endcard-url-overlay.png
